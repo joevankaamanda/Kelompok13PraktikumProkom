@@ -290,7 +290,7 @@ def Rtabung() :
     t = float(input("t = "))
     if V>0 and t>0:
         R_tabung = (V/(3.14*t))**(1/2)
-        print("Luas permukaan tabung = ", R_tabung)
+        print("Jari-jari tabung = ", R_tabung)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
