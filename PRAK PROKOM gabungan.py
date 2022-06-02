@@ -46,7 +46,7 @@ def Balok():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         Balok()
 def Vbalok():
-    print("Masukkan nilai p, l, dan t")
+    print("Masukkan nilai panjang, lebar, dan tinggi balok")
     p = float(input("p = "))
     l = float(input("l = "))
     t = float(input("t = "))
@@ -58,7 +58,7 @@ def Vbalok():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         Vbalok()
 def LPbalok():
-    print("Masukkan nilai p, l, dan t")
+    print("Masukkan nilai panjang, lebar, dan tinggi balok")
     p = float(input("p = "))
     l = float(input("l = "))
     t = float(input("t = "))
@@ -82,7 +82,7 @@ def Pbalok():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         Pbalok()
 def P_Vbalok():
-    print("Masukkan nilai V, l, dan t")
+    print("Masukkan nilai Volume, lebar, dan tinggi balok")
     V = float(input("V = "))
     l = float(input("l = "))
     t = float(input("t = "))
@@ -94,7 +94,7 @@ def P_Vbalok():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         P_Vbalok()
 def P_LPbalok():
-    print("Masukkan nilai LP, l, dan t")
+    print("Masukkan nilai Luas Permukaan, lebar, dan tinggi balok")
     LP = float(input("LP = "))
     l = float(input("l = "))
     t = float(input("t = "))
@@ -118,7 +118,7 @@ def Lbalok():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         Lbalok()
 def L_Vbalok():
-    print("Masukkan nilai V, p, dan t")
+    print("Masukkan nilai Volume, panjang, dan tinggi balok")
     V = float(input("V = "))
     p = float(input("p = "))
     t = float(input("t = "))
@@ -130,7 +130,7 @@ def L_Vbalok():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         L_Vbalok()
 def L_LPbalok():
-    print("Masukkan nilai LP, p, dan t")
+    print("Masukkan nilai Luas Permukaan, panjang, dan tinggi balok")
     LP = float(input("LP = "))
     p = float(input("p = "))
     t = float(input("t = "))
@@ -154,7 +154,7 @@ def Tbalok():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         Tbalok()
 def T_Vbalok():
-    print("Masukkan nilai V, p, dan l")
+    print("Masukkan nilai Volume, panjang, dan lebar balok")
     V = float(input("V = "))
     p = float(input("p = "))
     l = float(input("l = "))
@@ -166,7 +166,7 @@ def T_Vbalok():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         T_Vbalok()
 def T_LPbalok():
-    print("Masukkan nilai LP, p, dan l")
+    print("Masukkan nilai Luas Permukaan, panjang, dan lebar balok")
     LP = float(input("LP = "))
     p = float(input("p = "))
     l = float(input("l = "))
@@ -244,6 +244,7 @@ def R_LPbola():
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         R_LPbola()
+
 def tabung():
     print("[1] Volume")
     print("[2] Luas Permukaan")
