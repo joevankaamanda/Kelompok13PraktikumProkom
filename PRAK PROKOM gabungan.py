@@ -502,7 +502,246 @@ def Tlimaspersegipanjang2():
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         Tlimaspersegipanjang2()
-
+def tabung():
+    print("[1] Volume")
+    print("[2] Luas Permukaan")
+    print("[3] Jari-Jari")
+    print("[4] Tinggi Tabung")
+    pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    if pil in range(1,5):
+        if pil == 1:
+            Vtabung()
+        elif pil == 2:
+            LPtabung()
+        elif pil == 3:
+            Rtabung()
+        else:
+            Ttabung()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        tabung()
+def Vtabung() :
+    print("Masukkan nilai jari-jari dan tinggi tabung")
+    r = float(input("r = "))
+    t = float(input("t = "))
+    if r>0 and t>0:
+        V_tabung = 3.14*(r**2)*t
+        print("Volume tabung = ", V_tabung)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Vtabung()
+def LPtabung() :
+    print("Masukkan nilai jari-jari dan tinggi tabung")
+    r = float(input("r = "))
+    t = float(input("t = "))
+    if r>0 and t>0:
+        LP_tabung = 2*3.14*r*(r+t)
+        print("Luas permukaan tabung = ", LP_tabung)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LPtabung()
+def Rtabung() :
+    print("Masukkan nilai volume dan tinggi tabung")
+    V = float(input("V = "))
+    t = float(input("t = "))
+    if V>0 and t>0:
+        R_tabung = (V/(3.14*t))**(1/2)
+        print("Jari-jari tabung = ", R_tabung)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Rtabung()
+def Ttabung() :
+    print("[1] Volume dan Jari-Jari")
+    print("[2] Luas Permukaan dan Jari-Jari")
+    pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
+    if pil in range(1,3):
+        if pil == 1:
+            Ttabung1()
+        else:
+            Ttabung2()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        Ttabung()
+def Ttabung1():
+    print("Masukkan nilai volume dan jari-jari")
+    V = float(input("V = "))
+    r = float(input("r = "))
+    if V>0 and r>0:
+        T_tabung = V/(3.14*(r**2))
+        print("Tinggi tabung = ", T_tabung)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Ttabung1()
+def Ttabung2():
+    print("Masukkan nilai luas permukaan dan jari-jari")
+    LP = float(input("LP = "))
+    r = float(input("r = "))
+    if LP>0 and r>0:
+        T_tabung = (LP/(2*3.14*r))-r
+        print("Tinggi tabung = ", T_tabung)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Ttabung2()
+def pristiga():
+    print("[1] Luas Alas")
+    print("[2] Keliling Alas")
+    print("[3] Volume")
+    print("[4] Luas Permukaan")
+    print("[5] Luas Selimut")
+    print("[6] Tinggi Prisma")
+    pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    if pil in range(1,7):
+        if pil == 1:
+            LApristiga()
+        elif pil == 2:
+            KApristiga()
+        elif pil == 3:
+            Vpristiga()
+        elif pil == 4:
+            LPpristiga()
+        elif pil == 5:
+            LSpristiga()
+        else:
+            Tpristiga()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        pristiga()
+def LApristiga() :
+    print("[1] Alas dan Tinggi Segitiga")
+    print("[2] Seluruh Sisi Segitiga")
+    pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
+    if pil in range(1,3):
+        if pil == 1:
+            LApristiga1()
+        else:
+            LApristiga2()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        LApristiga()
+def LApristiga1():
+    print("Masukkan nilai alas dan tinggi segitiga")
+    alas_segitiga = float(input("alas = "))
+    tinggi_segitiga = float(input("tinggi = "))
+    if alas_segitiga>0 and tinggi_segitiga>0:
+        LA_pristiga = (alas_segitiga * tinggi_segitiga) / 2
+        print("Luas alas prisma segitiga = ", LA_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LApristiga1()
+def LApristiga2():
+    print("Masukkan nilai sisi-sisi segitiga")
+    sisi1 = float(input("sisi 1 = "))
+    sisi2 = float(input("sisi 2 = "))
+    sisi3 = float(input("sisi 3 = "))
+    if sisi1>0 and sisi2>0 and sisi3>0:
+        s = (sisi1+sisi2+sisi3)/2
+        LA_pristiga = (s*(s-sisi1)*(s-sisi2)*(s-sisi3))**(1/2)
+        print("Luas alas prisma segitiga = ", LA_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LApristiga2()
+def KApristiga():
+    print("Masukkan nilai sisi-sisi segitiga")
+    sisi1 = float(input("sisi 1 = "))
+    sisi2 = float(input("sisi 2 = "))
+    sisi3 = float(input("sisi 3 = "))
+    if sisi1>0 and sisi2>0 and sisi3>0:
+        KA_pristiga = sisi1+sisi2+sisi3
+        print("Keliling alas prisma segitiga = ", KA_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        KApristiga()
+def Vpristiga() :
+    print("Masukkan nilai luas alas dan tinggi prisma")
+    LA = float(input("Luas Alas = "))
+    t = float(input("Tinggi Prisma = "))
+    if LA>0 and t>0:
+        V_pristiga = LA*t
+        print("Volume prisma segitiga = ", V_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Vpristiga()
+def LPpristiga() :
+    print("Masukkan nilai luas alas, keliling alas, dan tinggi prisma")
+    LA = float(input("Luas Alas = "))
+    KA = float(input("Keliling Alas = "))
+    t = float(input("Tinggi Prisma = "))
+    if LA>0 and KA>0 and t>0:
+        LP_pristiga = (2*LA) + (KA*t)
+        print("Luas permukaan prisma segitiga = ", LP_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LPpristiga()
+def LSpristiga() :
+    print("Masukkan nilai keliling alas dan tinggi prisma")
+    KA = float(input("Keliling Alas = "))
+    t = float(input("Tinggi Prisma = "))
+    if KA>0 and t>0:
+        LS_pristiga = KA*t
+        print("Luas selimut prisma segitiga = ", LS_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LSpristiga()
+def Tpristiga():
+    print("[1] Luas Alas dan Volume")
+    print("[2] Luas Alas, Keliling Alas, dan Luas Permukaan")
+    print("[3] Luas Selimut dan Keliling ALas")
+    pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
+    if pil in range(1,4):
+        if pil == 1:
+            Tpristiga1()
+        if pil == 2:
+            Tpristiga2()
+        else:
+            Tpristiga3()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        Tpristiga()
+def Tpristiga1():
+    print("Masukkan nilai luas alas dan volume")
+    LA = float(input("Luas Alas = "))
+    V = float(input("Volume = "))
+    if LA>0 and V>0:
+        T_pristiga = V / LA
+        print("Tinggi prisma segitiga = ", T_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tpristiga1()
+def Tpristiga2():
+    print("Masukkan nilai luas alas, keliling alas, dan luas permukaan")
+    LA = float(input("Luas Alas = "))
+    KA = float(input("Keliling Alas = "))
+    LP = float(input("Luas Permukaan = "))
+    if LA>0 and KA>0 and LP>0:
+        T_pristiga = (LP - (2*LA))/KA
+        print("Tinggi prisma segitiga = ", T_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tpristiga2()
+def Tpristiga3():
+    print("Masukkan nilai luas selimut dan keliling alas")
+    LS = float(input("Luas Selimut = "))
+    KA = float(input("Keliling Alas = "))
+    if LS>0 and KA>0:
+        T_pristiga = LS / KA
+        print("Tinggi prisma segitiga = ", T_pristiga)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tpristiga3()
 def LimasSegitiga():
     print("[1] Volume")
     print("[2] Luas Permukaan")
