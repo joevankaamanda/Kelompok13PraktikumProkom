@@ -462,7 +462,7 @@ def Slimaspersegipanjang():
     l = float(input("Lebar Alas = "))
     if LP>0 and p>0 and l>0:
         S_limaspersegipanjang = LP - (p*l)
-        print(" Selimut Limas Persegi Panjang = ", S_limaspersegipanjang)
+        print("Selimut Limas Persegi Panjang = ", S_limaspersegipanjang)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -929,5 +929,5 @@ def ngitunglagi():
         print("Huruf yang anda masukkan salah, silakan isi kembali")
         ngitunglagi()
 
-print("HALO SELAMAT DATANG")
+print("HALO SELAMAT DATANG DI KALKULATOR BANGUN RUANG")
 menu()
