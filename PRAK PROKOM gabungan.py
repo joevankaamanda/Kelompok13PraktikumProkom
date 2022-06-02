@@ -13,6 +13,10 @@ def menu():
             Balok()
         elif pil == 2:
             Bola()
+        elif pil == 3:
+            Kubus()
+        elif pil == 4:
+            LimasSegiEmpat()
         elif pil == 5:
             tabung()
         elif pil == 6:
