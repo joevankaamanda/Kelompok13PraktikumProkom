@@ -244,7 +244,260 @@ def R_LPbola():
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         R_LPbola()
-
+def Kubus():
+    print("[1] Volume")
+    print("[2] Luas Permukaan")
+    print("[3] Rusuk")
+    pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    if pil in range (1,4):
+        if pil == 1:
+            Vkubus()
+        elif pil == 2:
+            LPkubus()
+        else:
+            Skubus()
+    else:
+        print("Nomor yang anda masukkan salah, silahkan cek dan masukkan nilai kembali")
+        Kubus()
+def Vkubus():
+    print("Masukkan nilai rusuk kubus")
+    s = float(input("s = "))
+    if s>0:
+        V_kubus = s*s*s
+        print("Volume kubus = ", V_kubus)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silahkan cek dan masukkan nilai kembali")
+        Vkubus()
+def LPkubus():
+    print("Masukkan nilai rusuk kubus")
+    s = float(input("s = "))
+    if s>0:
+        LP_kubus = 6*(s**2)
+        print("Luas permukaan kubus = ", LP_kubus)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silahkan cek dan masukkan nilai kembali")
+        LPkubus()
+def Skubus():
+    print("[1] Volume")
+    print("[2] Luas permukaan")
+    pil = int(input("SILAKAN PILIH NOMOR YANG DIKETAHUI = "))
+    if pil in range(1,3):
+        if pil == 1:
+            Skubus1()
+        else:
+            Skubus2()
+    else:
+        print("Nomor yang anda masukkan salah, silahkan cek dan masukkan nomor kembali")
+        Skubus()
+def Skubus1():
+    print("Masukkan nilai volume")
+    V = float(input("V = "))
+    if V>0:
+        S_kubus = V**(1/3)
+        print("Rusuk kubus = ", S_kubus)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Skubus1()
+def Skubus2():
+    print("Masukkan nilai luas permukaan")
+    LP = float(input("LP = "))
+    if LP>0:
+        S_kubus = (LP/6)**(1/2)
+        print("Rusuk kubus = ", S_kubus)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Skubus2()
+def LimasSegiEmpat(): 
+    print("[1] Limas Persegi")
+    print("[2] Limas Persegi Panjang")
+    pil = int(input("SILAKAN PILIH NOMOR LIMAS YANG AKAN DIHITUNG = "))
+    if pil in range(1,3):
+        if pil == 1:
+            LimasPersegi()
+        else: 
+            LimasPersegiPanjang()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        LimasSegiEmpat()
+def LimasPersegi():
+    print("[1] Volume")
+    print("[2] Luas Permukaan")
+    print("[3] Selimut")
+    print("[4] Tinggi")
+    pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    if pil in range(1,5):
+        if pil == 1:
+            Vlimaspersegi()
+        elif pil == 2:
+            LPlimaspersegi()
+        elif pil == 3:
+            Slimaspersegi()
+        else:
+            Tlimaspersegi()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        LimasPersegi()
+def Vlimaspersegi():
+    print ("Masukkan nilai panjang rusuk dan tinggi")
+    s = float(input("Panjang Rusuk = "))
+    t = float(input("Tinggi = "))
+    if s>0 and t>0:
+        V_limaspersegi = (1/3)*(s**2)*t
+        print("Volume Limas Persegi = ", V_limaspersegi)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Vlimaspersegi()  
+def LPlimaspersegi() :
+    print("Masukkan nilai panjang rusuk, luas alas, dan tinggi segitiga")
+    s = float(input("Panjang Rusuk = "))
+    a = float(input("Luas Alas = "))
+    t = float(input("Tinggi Segitiga = "))
+    if s>0 and a>0 and t>0:
+        LP_limaspersegi = (s**2) + (4*(1/2)*a*t)
+        print("Luas permukaan limas persegi = ", LP_limaspersegi)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LPlimaspersegi()  
+def Slimaspersegi():
+    print ("Masukkan nilai luas permukaan dan panjang rusuk")
+    LP = float(input("Luas Permukaan = "))
+    s = float(input("Panjang Rusuk = "))
+    if LP>0 and s>0:
+        S_limaspersegi = LP - (s*s)
+        print("Selimut Limas Persegi = ", S_limaspersegi)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Slimaspersegi()  
+def Tlimaspersegi():
+    print("[1] Volume, Panjang Rusuk ")
+    print("[2] Sisi Miring Segitiga, Diagonal Alas")
+    pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
+    if pil in range(1,3):
+        if pil == 1:
+            Tlimaspersegi1()
+        else:
+            Tlimaspersegi2()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        Tlimaspersegi()
+def Tlimaspersegi1():
+    print("Masukkan nilai volume, panjang rusuk")
+    V = float(input("Volume = "))
+    s = float(input("Panjang Rusuk = "))
+    if V>0 and s>0:
+        T_limaspersegi = (3*V)/(s*s)
+        print("Tinggi Limas Persegi = ", T_limaspersegi)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tlimaspersegi1()    
+def Tlimaspersegi2():
+    print("Masukkan nilai sisi miring segitiga, diagonal alas")
+    s = float(input("Sisi Miring Segitiga = "))
+    d = float(input("Diagonal Alas = "))
+    if s>0 and d>0:
+        T_limaspersegi = (s**2-((1/2*d)**2))**(1/2)
+        print("Tinggi Limas Persegi = ", T_limaspersegi)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tlimaspersegi2()
+def LimasPersegiPanjang():
+    print("[1] Volume")
+    print("[2] Luas Permukaan")
+    print("[3] Selimut")
+    print("[4] Tinggi")
+    pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    if pil in range(1,5):
+        if pil == 1:
+            Vlimaspersegipanjang()
+        elif pil == 2:
+            LPlimaspersegipanjang()
+        elif pil == 3:
+            Slimaspersegipanjang()
+        else:
+            Tlimaspersegipanjang()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        LimasPersegiPanjang()
+def Vlimaspersegipanjang():
+    print ("Masukkan nilai panjang alas, lebar alas, dan tinggi limas")
+    p = float(input("Panjang Alas = "))
+    l = float(input("Lebar Alas = "))
+    t = float(input("Tinggi Limas = "))
+    if p>0 and l>0 and t>0:
+        V_limaspersegipanjang = (1/3)*p*l*t
+        print("Volume Limas Persegi Panjang = ", V_limaspersegipanjang )
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Vlimaspersegipanjang()  
+def LPlimaspersegipanjang():
+    print("Masukkan nilai panjang alas, lebar alas, dan tinggi segitiga")
+    p = float(input("Panjang Alas = "))
+    l = float(input("Lebar Alas = "))
+    t = float(input("Tinggi Segitiga = "))
+    if p>0 and l>0 and t>0:
+        LP_limaspersegipanjang = (p*l)+(p*t)+(l*t)
+        print("Luas permukaan limas persegi = ", LP_limaspersegipanjang)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        LPlimaspersegipanjang()  
+def Slimaspersegipanjang():
+    print ("Masukkan nilai luas permukaan, panjang alas, dan lebar alas")
+    LP = float(input("Luas Permukaan = "))
+    p = float(input("Panjang Alas = "))
+    l = float(input("Lebar Alas = "))
+    if LP>0 and p>0 and l>0:
+        S_limaspersegipanjang = LP - (p*l)
+        print(" Selimut Limas Persegi Panjang = ", S_limaspersegipanjang)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Slimaspersegipanjang()  
+def Tlimaspersegipanjang():
+    print("[1] Volume, Panjang Alas, Lebar Alas")
+    print("[2] Sisi Miring Segitiga, Diagonal Alas")
+    pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
+    if pil in range(1,3):
+        if pil == 1:
+            Tlimaspersegipanjang1()
+        else:
+            Tlimaspersegipanjang2()
+    else:
+        print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
+        Tlimaspersegipanjang()
+def Tlimaspersegipanjang1():
+    print("Masukkan nilai volume, panjang alas, lebar alas")
+    V = float(input("Volume = "))
+    p = float(input("Panjang Alas = "))
+    l = float(input("Lebar Alas = "))
+    if V>0 and p>0 and l>0:
+        T_limaspersegipanjang = (3*V)/(p*l)
+        print("Tinggi Limas Persegi Panjang = ", T_limaspersegipanjang)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tlimaspersegipanjang1()  
+def Tlimaspersegipanjang2():
+    print("Masukkan nilai sisi miring, diagonal alas")
+    s = float(input("Sisi Miring Segitiga = "))
+    d = float(input("Diagonal Alas = "))
+    if s>0 and d>0:
+        T_limaspersegipanjang = (s**2-((1/2*d)**2))**(1/2)
+        print("Tinggi Limas Persegi Panjang = ", T_limaspersegipanjang)
+        ngitunglagi()
+    else:
+        print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
+        Tlimaspersegipanjang2()
 def tabung():
     print("[1] Volume")
     print("[2] Luas Permukaan")
