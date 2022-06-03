@@ -761,10 +761,10 @@ def LimasSegitiga():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         LimasSegitiga()
 def VLimasSegitiga():
-    print("Masukkan nilai a, t, dan T")
-    a = float(input("a = "))
-    t = float(input("t = "))
-    T = float(input("T = "))
+    print("Masukkan nilai alas, tinggi, dan tinggi limas")
+    a = float(input("alas = "))
+    t = float(input("tinggi = "))
+    T = float(input("tinggi limas = "))
     if a>0 and t>0 and T>0:
         VolLimasSegitiga = (1/3)*(1/2)*a*t*T
         print("Volume Limas Segitiga = ", VolLimasSegitiga)
@@ -787,10 +787,10 @@ def LPLimasSegitiga():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         LPLimasSegitiga()
 def LSLimasSegitiga():
-    print("Masukkan nilai a, LP, dan t")
-    a = float(input("a = "))
+    print("Masukkan nilai alas, Luas Permukaan, dan tinggi")
+    a = float(input("alas = "))
     LP = float(input("Luas Permukaan = "))
-    t = float(input("t = "))
+    t = float(input("tinggi = "))
     if a>0 and LP>0 and t>0:
         LS_LimasSegitiga = LP-((1/2)*a*t)
         print("Luas Selimut Limas Segitiga = ", LS_LimasSegitiga)
@@ -799,10 +799,10 @@ def LSLimasSegitiga():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         LSLimasSegitiga()
 def TLimasSegitiga():
-    print("Masukkan nilai a, V, dan t")
-    a = float(input("a = "))
+    print("Masukkan nilai alas, Volume, dan tinggi")
+    a = float(input("alas = "))
     V = float(input("Volume = "))
-    t = float(input("t = "))
+    t = float(input("tinggi = "))
     if a>0 and V>0 and t>0:
         T_LimasSegitiga = 3*V*(1/2)*a*t
         print("Tinggi Limas Segitiga = ", T_LimasSegitiga)
@@ -829,9 +829,9 @@ def Kerucut():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         Kerucut()
 def VKerucut():
-    print("Masukkan nilai r, dan t")
-    r = float(input("r = "))
-    t = float(input("t = "))
+    print("Masukkan nilai jari-jari, dan tinggi")
+    r = float(input("jari-jari = "))
+    t = float(input("tinggi = "))
     if r>0 and t>0:
         VolKerucut = (1/3)*3.14*t*(r**2)
         print("Volume Kerucut = ", VolKerucut)
@@ -840,9 +840,9 @@ def VKerucut():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         VKerucut()
 def LPKerucut():
-    print("Masukkan nilai r, dan s")
-    r = float(input("r = "))
-    s = float(input("s = "))
+    print("Masukkan nilai jari-jari, dan garis pelukis")
+    r = float(input("jari-jari = "))
+    s = float(input("garis pelukis = "))
     if r>0 and s>0 :
         LP_Kerucut = (3.14*r*s)+(3.14*r**2)
         print("Luas Permukaan Kerucut = ", LP_Kerucut)
@@ -863,9 +863,9 @@ def rKerucut():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         rKerucut()
 def r_VKerucut():
-    print("Masukkan nilai V, dan t")
-    V = float(input("V = "))
-    t = float(input("t = "))
+    print("Masukkan nilai Volume, dan tinggi")
+    V = float(input("Volume = "))
+    t = float(input("ttinggi = "))
     if V>0 and t>0:
         rVKerucut = ((3*V)/(3.14*t))**(1/2)
         print("Jari-jari Kerucut = ", rVKerucut)
@@ -874,9 +874,9 @@ def r_VKerucut():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         r_VKerucut()
 def r_sKerucut():
-    print("Masukkan nilai s, dan t")
-    s = float(input("s = "))
-    t = float(input("t = "))
+    print("Masukkan nilai garis pelukis, dan tinggi")
+    s = float(input("garis pelukis = "))
+    t = float(input("tinggi = "))
     if s>0 and t>0:
         rsKerucut = ((s**2)-(t**3))**(1/2)
         print("Jari-jari Kerucut = ", rsKerucut)
@@ -897,9 +897,9 @@ def TKerucut():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         TKerucut()
 def T_VKerucut():
-    print("Masukkan nilai V, dan t")
-    V = float(input("V = "))
-    r = float(input("r = "))
+    print("Masukkan nilai Volume, dan jari-jari")
+    V = float(input("Volume = "))
+    r = float(input("jari-jari = "))
     if V>0 and r>0:
         TVKerucut = (3*V)/(3.14*(r**2))
         print("Tinggi Kerucut = ", TVKerucut)
@@ -908,9 +908,9 @@ def T_VKerucut():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         T_VKerucut()
 def T_sKerucut():
-    print("Masukkan nilai s, dan r")
-    s = float(input("s = "))
-    r = float(input("r = "))
+    print("Masukkan nilai garis pelukis, dan jari-jari")
+    s = float(input("garis pelukis = "))
+    r = float(input("jari-jari = "))
     if s>0 and r>0:
         TsKerucut = ((s**2)-(r**2))**(1/2)
         print("Tinggi Kerucut = ", TsKerucut)
