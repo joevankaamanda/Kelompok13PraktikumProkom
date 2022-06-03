@@ -761,7 +761,7 @@ def LimasSegitiga():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         LimasSegitiga()
 def VLimasSegitiga():
-    print("Masukkan nilai alas, tinggi, dan tinggi limas")
+    print("Masukkan nilai alas segitiga, tinggi segitiga, dan tinggi limas")
     a = float(input("alas = "))
     t = float(input("tinggi = "))
     T = float(input("tinggi limas = "))
@@ -773,7 +773,7 @@ def VLimasSegitiga():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         VLimasSegitiga()
 def LPLimasSegitiga():
-    print("Masukkan nilai a, t, luas tegak segitiga 1, luas tegak segitiga 2, luas tegak segitiga 3")
+    print("Masukkan nilai alas segitiga, tinggi segitiga, luas tegak segitiga 1, luas tegak segitiga 2, luas tegak segitiga 3")
     a = float(input("a = "))
     t = float(input("t = "))
     luastegaksegitiga1 = float(input("luas tegak segitiga 1 = "))
@@ -787,7 +787,7 @@ def LPLimasSegitiga():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         LPLimasSegitiga()
 def LSLimasSegitiga():
-    print("Masukkan nilai alas, Luas Permukaan, dan tinggi")
+    print("Masukkan nilai alas segitiga, Luas Permukaan, dan tinggi segitiga")
     a = float(input("alas = "))
     LP = float(input("Luas Permukaan = "))
     t = float(input("tinggi = "))
@@ -799,7 +799,7 @@ def LSLimasSegitiga():
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         LSLimasSegitiga()
 def TLimasSegitiga():
-    print("Masukkan nilai alas, Volume, dan tinggi")
+    print("Masukkan nilai alas segitiga, Volume, dan tinggi segitiga")
     a = float(input("alas = "))
     V = float(input("Volume = "))
     t = float(input("tinggi = "))
