@@ -1,3 +1,5 @@
+hitung = ""
+urutan = 0
 def menu():
     print("[1] Balok")
     print("[2] Bola")
@@ -35,6 +37,10 @@ def Balok():
     print("[4] Lebar Balok")
     print("[5] Tinggi Balok")
     pil = int(input("SILAKAN PILIH NOMOR YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nBALOK\n".format(urutan)
     if pil in range(1,6):
         if pil == 1:
             Vbalok()
@@ -57,6 +63,8 @@ def Vbalok():
     if p>0 and l>0 and t>0:
         Volbalok = p*l*t
         print("Volume balok = ", Volbalok)
+        global hitung 
+        hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi Balok= {}\nVolume balok = {}\n\n".format(p,l,t,Volbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -69,6 +77,8 @@ def LPbalok():
     if p>0 and l>0 and t>0:
         LP_balok = (2*p*l)+(2*p*t)+(2*l*t)
         print("Luas Permukaan balok = ", LP_balok)
+        global hitung 
+        hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi balok= {}\nLuas permukaan balok = {}\n\n".format(p,l,t,LP_balok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -93,6 +103,8 @@ def P_Vbalok():
     if V>0 and l>0 and t>0:
         PVbalok = V/(l*t)
         print("Panjang balok = ", PVbalok)
+        global hitung 
+        hitung = hitung + "Volume balok = {}\nLebar balok = {}\nTinggi balok= {}\nPanjang balok = {}\n\n".format(V,l,t,PVbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -105,6 +117,8 @@ def P_LPbalok():
     if LP>0 and l>0 and t>0:
         PLPbalok = (LP-(2*l*t))/(2*(l+t))
         print("Panjang balok = ", PLPbalok)
+        global hitung 
+        hitung = hitung + "Luas permukaan balok = {}\nLebar balok = {}\nTinggi balok= {}\nPanjang balok = {}\n\n".format(LP,l,t,PLPbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -129,6 +143,8 @@ def L_Vbalok():
     if V>0 and p>0 and t>0:
         LVbalok = V/(p*t)
         print("Lebar balok = ", LVbalok)
+        global hitung 
+        hitung = hitung + "Volume balok = {}\nPanjang balok = {}\nTinggi balok= {}\nLebar balok = {}\n\n".format(V,p,t,LVbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -141,6 +157,8 @@ def L_LPbalok():
     if LP>0 and p>0 and t>0:
         LLPbalok = (LP-(2*p*t))/(2*(p+t))
         print("Lebar balok = ", LLPbalok)
+        global hitung 
+        hitung = hitung + "Luas permukaan balok = {}\nPanjang balok = {}\nTinggi balok= {}\nLebar balok = {}\n\n".format(LP,p,t,LLPbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -165,6 +183,8 @@ def T_Vbalok():
     if V>0 and p>0 and l>0:
         TVbalok = V/(p*l)
         print("Tinggi balok = ", TVbalok)
+        global hitung 
+        hitung = hitung + "Volume balok = {}\nPanjang balok = {}\nLebar balok= {}\nTinggi balok = {}\n\n".format(V,p,l,TVbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -177,6 +197,8 @@ def T_LPbalok():
     if LP>0 and p>0 and l>0:
         TLPbalok = (LP-(2*p*l))/(2*(p+l))
         print("Tinggi balok = ", TLPbalok)
+        global hitung 
+        hitung = hitung + "Luas permukaan balok = {}\nPanjang balok = {}\nLebar balok= {}\nTinggi balok = {}\n\n".format(LP,p,l,TLPbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -186,6 +208,10 @@ def Bola():
     print("[2] Luas Permukaan")
     print("[3] Jari-jari")
     pil = int(input("SILAKAN PILIH NOMOR YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nBOLA\n".format(urutan)
     if pil in range(1,4):
         if pil == 1:
             Vbola()
@@ -202,6 +228,8 @@ def Vbola():
     if r>0:
         Volbola = (4*3.14*(r**3))/3
         print("Volume balok = ", Volbola)
+        global hitung 
+        hitung = hitung + "Jari-jari bola = {}\nVolume bola = {}\n\n".format(r,Volbola)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -212,6 +240,8 @@ def LPbola():
     if r>0:
         LP_bola = (4*3.14*(r**2))
         print("Volume balok = ", LP_bola)
+        global hitung 
+        hitung = hitung + "Jari-jari bola = {}\nLuas permukaan bola = {}\n\n".format(r,LP_bola)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -234,6 +264,8 @@ def R_Vbola():
     if V>0:
         RVbola = ((3*V)/(4*3.14))**(1/3)
         print("Jari-jari bola = ", RVbola)
+        global hitung 
+        hitung = hitung + "Volume bola = {}\nJari-jari bola = {}\n\n".format(V,RVbola)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -244,6 +276,8 @@ def R_LPbola():
     if LP>0:
         RLPbola = (LP/(4*3.14))**(1/2)
         print("Jari-jari bola = ", RLPbola)
+        global hitung 
+        hitung = hitung + "Luas permukaan bola = {}\nJari-jari bola = {}\n\n".format(LP,RLPbola)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -924,10 +958,23 @@ def ngitunglagi():
         if hitung == "Y":
             menu()
         else:
-            print("TERIMA KASIH :)")
+            history()
     else:
         print("Huruf yang anda masukkan salah, silakan isi kembali")
         ngitunglagi()
+def history():
+    htr = str(input("Ingin melihat history perhitungan anda? Ketik Y untuk YA atau T untuk TIDAK = "))
+    if htr == "Y" or htr == "T":
+        if htr == "Y":
+            namafile = str(input("Tulis nama file untuk history perhitungan = "))
+            file_history = open(namafile, "w")
+            file_history.write(hitung)
+            file_history.close()
+        else:
+            print("TERIMA KASIH TELAH MENGGUNAKAN PROGRAM KAMI:)")
+    else:
+        print("Huruf yang anda masukkan salah, silakan isi kembali")
+        history()
 
 print("HALO SELAMAT DATANG DI KALKULATOR BANGUN RUANG")
 menu()
