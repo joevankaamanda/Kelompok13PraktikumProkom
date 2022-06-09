@@ -64,7 +64,7 @@ def Vbalok():
         Volbalok = p*l*t
         print("Volume balok = ", Volbalok)
         global hitung 
-        hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi Balok= {}\nVolume balok = {}\n\n".format(p,l,t,Volbalok)
+        hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi Balok = {}\nVolume balok = {}\n\n".format(p,l,t,Volbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -78,7 +78,7 @@ def LPbalok():
         LP_balok = (2*p*l)+(2*p*t)+(2*l*t)
         print("Luas Permukaan balok = ", LP_balok)
         global hitung 
-        hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi balok= {}\nLuas permukaan balok = {}\n\n".format(p,l,t,LP_balok)
+        hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi balok = {}\nLuas permukaan balok = {}\n\n".format(p,l,t,LP_balok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -104,7 +104,7 @@ def P_Vbalok():
         PVbalok = V/(l*t)
         print("Panjang balok = ", PVbalok)
         global hitung 
-        hitung = hitung + "Volume balok = {}\nLebar balok = {}\nTinggi balok= {}\nPanjang balok = {}\n\n".format(V,l,t,PVbalok)
+        hitung = hitung + "Volume balok = {}\nLebar balok = {}\nTinggi balok = {}\nPanjang balok = {}\n\n".format(V,l,t,PVbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -118,7 +118,7 @@ def P_LPbalok():
         PLPbalok = (LP-(2*l*t))/(2*(l+t))
         print("Panjang balok = ", PLPbalok)
         global hitung 
-        hitung = hitung + "Luas permukaan balok = {}\nLebar balok = {}\nTinggi balok= {}\nPanjang balok = {}\n\n".format(LP,l,t,PLPbalok)
+        hitung = hitung + "Luas permukaan balok = {}\nLebar balok = {}\nTinggi balok = {}\nPanjang balok = {}\n\n".format(LP,l,t,PLPbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -144,7 +144,7 @@ def L_Vbalok():
         LVbalok = V/(p*t)
         print("Lebar balok = ", LVbalok)
         global hitung 
-        hitung = hitung + "Volume balok = {}\nPanjang balok = {}\nTinggi balok= {}\nLebar balok = {}\n\n".format(V,p,t,LVbalok)
+        hitung = hitung + "Volume balok = {}\nPanjang balok = {}\nTinggi balok = {}\nLebar balok = {}\n\n".format(V,p,t,LVbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -158,7 +158,7 @@ def L_LPbalok():
         LLPbalok = (LP-(2*p*t))/(2*(p+t))
         print("Lebar balok = ", LLPbalok)
         global hitung 
-        hitung = hitung + "Luas permukaan balok = {}\nPanjang balok = {}\nTinggi balok= {}\nLebar balok = {}\n\n".format(LP,p,t,LLPbalok)
+        hitung = hitung + "Luas permukaan balok = {}\nPanjang balok = {}\nTinggi balok = {}\nLebar balok = {}\n\n".format(LP,p,t,LLPbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -184,7 +184,7 @@ def T_Vbalok():
         TVbalok = V/(p*l)
         print("Tinggi balok = ", TVbalok)
         global hitung 
-        hitung = hitung + "Volume balok = {}\nPanjang balok = {}\nLebar balok= {}\nTinggi balok = {}\n\n".format(V,p,l,TVbalok)
+        hitung = hitung + "Volume balok = {}\nPanjang balok = {}\nLebar balok = {}\nTinggi balok = {}\n\n".format(V,p,l,TVbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -198,7 +198,7 @@ def T_LPbalok():
         TLPbalok = (LP-(2*p*l))/(2*(p+l))
         print("Tinggi balok = ", TLPbalok)
         global hitung 
-        hitung = hitung + "Luas permukaan balok = {}\nPanjang balok = {}\nLebar balok= {}\nTinggi balok = {}\n\n".format(LP,p,l,TLPbalok)
+        hitung = hitung + "Luas permukaan balok = {}\nPanjang balok = {}\nLebar balok = {}\nTinggi balok = {}\n\n".format(LP,p,l,TLPbalok)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
