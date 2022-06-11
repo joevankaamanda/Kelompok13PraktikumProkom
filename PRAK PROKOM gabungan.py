@@ -287,6 +287,10 @@ def Kubus():
     print("[2] Luas Permukaan")
     print("[3] Rusuk")
     pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nKUBUS\n".format(urutan)
     if pil in range (1,4):
         if pil == 1:
             Vkubus()
@@ -313,6 +317,8 @@ def LPkubus():
     if s>0:
         LP_kubus = 6*(s**2)
         print("Luas permukaan kubus = ", LP_kubus)
+        global hitung 
+        hitung = hitung + "Rusuk kubus = {}\n\n".format(s,LP_Kubus)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silahkan cek dan masukkan nilai kembali")
@@ -320,7 +326,7 @@ def LPkubus():
 def Skubus():
     print("[1] Volume")
     print("[2] Luas permukaan")
-    pil = int(input("SILAKAN PILIH NOMOR YANG DIKETAHUI = "))
+    pil = int(input("SILAKAN PILIH NOMOR YANG DIKETAHUI = ")
     if pil in range(1,3):
         if pil == 1:
             Skubus1()
@@ -335,6 +341,8 @@ def Skubus1():
     if V>0:
         S_kubus = V**(1/3)
         print("Rusuk kubus = ", S_kubus)
+        global hitung 
+        hitung = hitung + "Volume =  {}\n\n".format(V,S_kubus)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -345,6 +353,8 @@ def Skubus2():
     if LP>0:
         S_kubus = (LP/6)**(1/2)
         print("Rusuk kubus = ", S_kubus)
+        global hitung 
+        hitung = hitung + "Luas Permukaan =  {}\n\n".format(LP,S_kubus)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -442,7 +452,8 @@ def Tlimaspersegi1():
     if V>0 and s>0:
         T_limaspersegi = (3*V)/(s*s)
         print("Tinggi Limas Persegi = ", T_limaspersegi)
-        ngitunglagi()
+        global hitung 
+        hitung = hitung + "Volume = {}\nLuas alas = {}\nPanjang rusuk =  {}\n\n".format(V,s,T_limaspersegi)
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         Tlimaspersegi1()    
@@ -453,6 +464,8 @@ def Tlimaspersegi2():
     if s>0 and d>0:
         T_limaspersegi = (s**2-((1/2*d)**2))**(1/2)
         print("Tinggi Limas Persegi = ", T_limaspersegi)
+        global hitung 
+        hitung = hitung + "Sisi miring segitiga = {}\nDiagonal alas =  {}\n\n".format(s,d,T_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -463,6 +476,10 @@ def LimasPersegiPanjang():
     print("[3] Selimut")
     print("[4] Tinggi")
     pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nLIMASPERSEGIPANJANG\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             Vlimaspersegipanjang()
@@ -483,6 +500,8 @@ def Vlimaspersegipanjang():
     if p>0 and l>0 and t>0:
         V_limaspersegipanjang = (1/3)*p*l*t
         print("Volume Limas Persegi Panjang = ", V_limaspersegipanjang )
+        global hitung 
+        hitung = hitung + "Panjang alas = {}\nLebar alas = {}\nTinggi limas persegi panjang= {}\n\n".format(p,l,t,V_limaspersegipanjang)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -495,6 +514,8 @@ def LPlimaspersegipanjang():
     if p>0 and l>0 and t>0:
         LP_limaspersegipanjang = (p*l)+(p*t)+(l*t)
         print("Luas permukaan limas persegi = ", LP_limaspersegipanjang)
+        global hitung 
+        hitung = hitung + "Panjang alas = {}\nLebar alas = {}\nTinggi segitiga = {}\n\n".format(p,l,t,LP_limaspersegipanjang)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -507,6 +528,8 @@ def Slimaspersegipanjang():
     if LP>0 and p>0 and l>0:
         S_limaspersegipanjang = LP - (p*l)
         print("Selimut Limas Persegi Panjang = ", S_limaspersegipanjang)
+        global hitung 
+        hitung = hitung + "Luas permukaan = {}\nPanjang alas = {}\nLebar alas = {}\n\n".format(LP,p,l,S_limaspersegipanjang)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -531,6 +554,8 @@ def Tlimaspersegipanjang1():
     if V>0 and p>0 and l>0:
         T_limaspersegipanjang = (3*V)/(p*l)
         print("Tinggi Limas Persegi Panjang = ", T_limaspersegipanjang)
+        global hitung 
+        hitung = hitung + "Volume = {}\nPanjang alas = {}\nLebar alas = {}\n\n".format(V,p,l,T_limaspersegipanjang)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -542,6 +567,8 @@ def Tlimaspersegipanjang2():
     if s>0 and d>0:
         T_limaspersegipanjang = (s**2-((1/2*d)**2))**(1/2)
         print("Tinggi Limas Persegi Panjang = ", T_limaspersegipanjang)
+        global hitung 
+        hitung = hitung + "Sisi miring segitiga = {}\nDiagonal alas = {}\n\n".format(s,d,T_limaspersegipanjang)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
