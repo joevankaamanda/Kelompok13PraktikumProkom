@@ -542,6 +542,10 @@ def tabung():
     print("[3] Jari-Jari")
     print("[4] Tinggi Tabung")
     pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nTABUNG\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             Vtabung()
@@ -561,6 +565,8 @@ def Vtabung() :
     if r>0 and t>0:
         V_tabung = 3.14*(r**2)*t
         print("Volume tabung = ", V_tabung)
+        global hitung 
+        hitung = hitung + "Jari-jari tabung = {}\nTinggi tabung = {}\nVolume tabung = {}\n\n".format(r,t,V_tabung)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -572,6 +578,8 @@ def LPtabung() :
     if r>0 and t>0:
         LP_tabung = 2*3.14*r*(r+t)
         print("Luas permukaan tabung = ", LP_tabung)
+        global hitung 
+        hitung = hitung + "Jari-jari tabung = {}\nTinggi tabung = {}\nLuas permukaan tabung = {}\n\n".format(r,t,LP_tabung)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -583,6 +591,8 @@ def Rtabung() :
     if V>0 and t>0:
         R_tabung = (V/(3.14*t))**(1/2)
         print("Jari-jari tabung = ", R_tabung)
+        global hitung 
+        hitung = hitung + "Volume tabung = {}\nTinggi tabung = {}\nJari-jari tabung = {}\n\n".format(V,t,R_tabung)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -606,6 +616,8 @@ def Ttabung1():
     if V>0 and r>0:
         T_tabung = V/(3.14*(r**2))
         print("Tinggi tabung = ", T_tabung)
+        global hitung 
+        hitung = hitung + "Volume tabung = {}\nJari-jari tabung = {}\nTinggi tabung = {}\n\n".format(V,r,T_tabung)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -617,6 +629,8 @@ def Ttabung2():
     if LP>0 and r>0:
         T_tabung = (LP/(2*3.14*r))-r
         print("Tinggi tabung = ", T_tabung)
+        global hitung 
+        hitung = hitung + "Luas permukaan tabung = {}\nJari-jari tabung = {}\nTinggi tabung = {}\n\n".format(LP,r,T_tabung)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -629,6 +643,10 @@ def pristiga():
     print("[5] Luas Selimut")
     print("[6] Tinggi Prisma")
     pil = int(input("SILAKAN PILIH ELEMEN YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nPRISMA SEGITIGA\n".format(urutan)
     if pil in range(1,7):
         if pil == 1:
             LApristiga()
@@ -664,6 +682,8 @@ def LApristiga1():
     if alas_segitiga>0 and tinggi_segitiga>0:
         LA_pristiga = (alas_segitiga * tinggi_segitiga) / 2
         print("Luas alas prisma segitiga = ", LA_pristiga)
+        global hitung 
+        hitung = hitung + "Alas segitiga = {}\nTinggi segitiga = {}\nLuas alas prisma segitiga = {}\n\n".format(alas_segitiga,tinggi_segitiga,LA_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -677,6 +697,8 @@ def LApristiga2():
         s = (sisi1+sisi2+sisi3)/2
         LA_pristiga = (s*(s-sisi1)*(s-sisi2)*(s-sisi3))**(1/2)
         print("Luas alas prisma segitiga = ", LA_pristiga)
+        global hitung 
+        hitung = hitung + "Sisi 1 = {}\nSisi 2 = {}\nSisi 3 = {}\nLuas alas prisma segitiga = {}\n\n".format(sisi1,sisi2,sisi3,LA_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -689,6 +711,8 @@ def KApristiga():
     if sisi1>0 and sisi2>0 and sisi3>0:
         KA_pristiga = sisi1+sisi2+sisi3
         print("Keliling alas prisma segitiga = ", KA_pristiga)
+        global hitung 
+        hitung = hitung + "Sisi 1 = {}\nSisi 2 = {}\nSisi 3 = {}\nKeliling alas prisma segitiga = {}\n\n".format(sisi1,sisi2,sisi3,KA_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -700,6 +724,8 @@ def Vpristiga() :
     if LA>0 and t>0:
         V_pristiga = LA*t
         print("Volume prisma segitiga = ", V_pristiga)
+        global hitung 
+        hitung = hitung + "Luas alas prisma segitiga = {}\nTinggi prisma segitiga = {}\nVolume prisma segitiga = {}\n\n".format(LA,t,V_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -712,6 +738,8 @@ def LPpristiga() :
     if LA>0 and KA>0 and t>0:
         LP_pristiga = (2*LA) + (KA*t)
         print("Luas permukaan prisma segitiga = ", LP_pristiga)
+        global hitung 
+        hitung = hitung + "Luas alas prisma segitiga = {}\nKeliling alas prisma segitiga = {}\nTinggi prisma segitiga = {}\nLuas permukaan prisma segitiga = {}\n\n".format(LA,KA,t,LP_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -723,6 +751,8 @@ def LSpristiga() :
     if KA>0 and t>0:
         LS_pristiga = KA*t
         print("Luas selimut prisma segitiga = ", LS_pristiga)
+        global hitung 
+        hitung = hitung + "Keliling alas prisma segitiga = {}\nTinggi prisma segitiga = {}\nLuas selimut prisma segitiga = {}\n\n".format(KA,t,LS_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -749,6 +779,8 @@ def Tpristiga1():
     if LA>0 and V>0:
         T_pristiga = V / LA
         print("Tinggi prisma segitiga = ", T_pristiga)
+        global hitung 
+        hitung = hitung + "Luas alas prisma segitiga = {}\nVolume prisma segitiga = {}\nTinggi prisma segitiga = {}\n\n".format(LA,V,T_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -761,6 +793,8 @@ def Tpristiga2():
     if LA>0 and KA>0 and LP>0:
         T_pristiga = (LP - (2*LA))/KA
         print("Tinggi prisma segitiga = ", T_pristiga)
+        global hitung 
+        hitung = hitung + "Luas alas prisma segitiga = {}\nKeliling alas prisma segitiga = {}\nLuas permukaan prisma segitiga = {}\nTinggi prisma segitiga = {}\n\n".format(LA,KA,LP,T_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -772,6 +806,8 @@ def Tpristiga3():
     if LS>0 and KA>0:
         T_pristiga = LS / KA
         print("Tinggi prisma segitiga = ", T_pristiga)
+        global hitung 
+        hitung = hitung + "Luas selimut prisma segitiga = {}\nKeliling alas prisma segitiga = {}\nTinggi prisma segitiga = {}\n\n".format(LS,KA,T_pristiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
