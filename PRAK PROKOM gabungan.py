@@ -370,7 +370,7 @@ def LimasPersegi():
     global urutan
     urutan += 1
     global hitung
-hitung += "---{}---\nLIMASPERSEGI\n".format(urutan)
+    hitung += "---{}---\nLIMASPERSEGI\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             Vlimaspersegi()
@@ -391,7 +391,7 @@ def Vlimaspersegi():
         V_limaspersegi = (1/3)*(s**2)*t
         print("Volume Limas Persegi = ", V_limaspersegi)
         global hitung 
-        hitung = hitung + "Panjang rusuk = {}\nTinggi limas persegi = {}\n\n".format(s,t,Vlimaspersegi)
+        hitung = hitung + "Panjang rusuk = {}\nTinggi limas persegi = {}\nVolume limas persegi = {}\n\n".format(s,t,V_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -405,7 +405,7 @@ def LPlimaspersegi() :
         LP_limaspersegi = (s**2) + (4*(1/2)*a*t)
         print("Luas permukaan limas persegi = ", LP_limaspersegi)
         global hitung 
-        hitung = hitung + "Panjang rusuk = {}\nLuas alas = {}\nTinggi segitiga= {}\nLuas permukaan limas persegi = {}\n\n".format(s,a,t,LPlimaspersegi)
+        hitung = hitung + "Panjang rusuk = {}\nLuas alas = {}\nTinggi segitiga= {}\nLuas permukaan limas persegi = {}\n\n".format(s,a,t,LP_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -418,7 +418,7 @@ def Slimaspersegi():
         S_limaspersegi = LP - (s*s)
         print("Selimut Limas Persegi = ", S_limaspersegi)
         global hitung 
-        hitung = hitung + "Luas permukaan = {}\nPanjang rusuk = {}\n\n".format(LP,s,Slimaspersegi)
+        hitung = hitung + "Luas permukaan = {}\nPanjang rusuk = {}\nSelimut limas persegi = {}\n\n".format(LP,s,S_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -426,8 +426,6 @@ def Slimaspersegi():
 def Tlimaspersegi():
     print("[1] Volume, Panjang Rusuk ")
     print("[2] Sisi Miring Segitiga, Diagonal Alas")
-    global hitung 
-    hitung = hitung + "Panjang balok = {}\nLebar balok = {}\nTinggi Balok= {}\nVolume balok = {}\n\n".format(p,l,t,Volbalok)
     pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
     if pil in range(1,3):
         if pil == 1:
