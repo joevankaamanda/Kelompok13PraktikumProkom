@@ -308,7 +308,7 @@ def Vkubus():
         V_kubus = s*s*s
         print("Volume kubus = ", V_kubus)
         global hitung 
-        hitung = hitung + "Rusuk kubus = {}\nVolume kubus = {}\n\n".format(s,V_Kubus)
+        hitung = hitung + "Rusuk kubus = {}\nVolume kubus = {}\n\n".format(s,V_kubus)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silahkan cek dan masukkan nilai kembali")
@@ -320,7 +320,7 @@ def LPkubus():
         LP_kubus = 6*(s**2)
         print("Luas permukaan kubus = ", LP_kubus)
         global hitung 
-        hitung = hitung + "Rusuk kubus = {}\nLuas permukaan = {}\n\n".format(s,LP_Kubus)
+        hitung = hitung + "Rusuk kubus = {}\nLuas permukaan = {}\n\n".format(s,LP_kubus)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silahkan cek dan masukkan nilai kembali")
