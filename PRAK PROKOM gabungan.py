@@ -227,7 +227,7 @@ def Vbola():
     r = float(input("r = "))
     if r>0:
         Volbola = (4*3.14*(r**3))/3
-        print("Volume balok = ", Volbola)
+        print("Volume bola = ", Volbola)
         global hitung 
         hitung = hitung + "Jari-jari bola = {}\nVolume bola = {}\n\n".format(r,Volbola)
         ngitunglagi()
@@ -239,7 +239,7 @@ def LPbola():
     r = float(input("r = "))
     if r>0:
         LP_bola = (4*3.14*(r**2))
-        print("Volume bola = ", LP_bola)
+        print("Luas permukaan bola = ", LP_bola)
         global hitung 
         hitung = hitung + "Jari-jari bola = {}\nLuas permukaan bola = {}\n\n".format(r,LP_bola)
         ngitunglagi()
@@ -982,7 +982,7 @@ def rKerucut():
 def r_VKerucut():
     print("Masukkan nilai Volume, dan tinggi")
     V = float(input("Volume = "))
-    t = float(input("ttinggi = "))
+    t = float(input("tinggi = "))
     if V>0 and t>0:
         rVKerucut = ((3*V)/(3.14*t))**(1/2)
         print("Jari-jari Kerucut = ", rVKerucut)
@@ -1025,7 +1025,7 @@ def T_VKerucut():
         TVKerucut = (3*V)/(3.14*(r**2))
         print("Tinggi Kerucut = ", TVKerucut)
         global hitung 
-        hitung = hitung + "Volume kerucut = {}\nJari-jari kerucut = {}\nTinggi kerucut = {}\n\n".format(V,r,TsKerucut)
+        hitung = hitung + "Volume kerucut = {}\nJari-jari kerucut = {}\nTinggi kerucut = {}\n\n".format(V,r,TVKerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
