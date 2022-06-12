@@ -925,6 +925,10 @@ def Kerucut():
     print("[3] Jari-jari")
     print("[4] Tinggi kerucut")
     pil = int(input("SILAKAN PILIH NOMOR YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nKERUCUT\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             VKerucut()
@@ -944,6 +948,8 @@ def VKerucut():
     if r>0 and t>0:
         VolKerucut = (1/3)*3.14*t*(r**2)
         print("Volume Kerucut = ", VolKerucut)
+        global hitung 
+        hitung = hitung + "Jari-jari kerucut = {}\nTinggi kerucut = {}\nVolume kerucut = {}\n\n".format(r,t,VolKerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -955,6 +961,8 @@ def LPKerucut():
     if r>0 and s>0 :
         LP_Kerucut = (3.14*r*s)+(3.14*r**2)
         print("Luas Permukaan Kerucut = ", LP_Kerucut)
+        global hitung 
+        hitung = hitung + "Jari-jari kerucut = {}\nGaris pelukis kerucut = {}\nLuas permukaan kerucut = {}\n\n".format(r,s,LP_Kerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -978,6 +986,8 @@ def r_VKerucut():
     if V>0 and t>0:
         rVKerucut = ((3*V)/(3.14*t))**(1/2)
         print("Jari-jari Kerucut = ", rVKerucut)
+        global hitung 
+        hitung = hitung + "Volume kerucut = {}\nTinggi kerucut = {}\nJari-jari kerucut = {}\n\n".format(V,t,rVKerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -989,6 +999,8 @@ def r_sKerucut():
     if s>0 and t>0:
         rsKerucut = ((s**2)-(t**3))**(1/2)
         print("Jari-jari Kerucut = ", rsKerucut)
+        global hitung 
+        hitung = hitung + "Garis pelukis kerucut = {}\nTinggi kerucut = {}\nJari-jari kerucut = {}\n\n".format(s,t,rsKerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -1012,6 +1024,8 @@ def T_VKerucut():
     if V>0 and r>0:
         TVKerucut = (3*V)/(3.14*(r**2))
         print("Tinggi Kerucut = ", TVKerucut)
+        global hitung 
+        hitung = hitung + "Volume kerucut = {}\nJari-jari kerucut = {}\nTinggi kerucut = {}\n\n".format(V,r,TsKerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -1023,6 +1037,8 @@ def T_sKerucut():
     if s>0 and r>0:
         TsKerucut = ((s**2)-(r**2))**(1/2)
         print("Tinggi Kerucut = ", TsKerucut)
+        global hitung 
+        hitung = hitung + "Garis pelukis kerucut = {}\nJari-jari kerucut = {}\nTinggi kerucut = {}\n\n".format(s,r,TsKerucut)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
