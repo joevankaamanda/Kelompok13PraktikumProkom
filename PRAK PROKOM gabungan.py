@@ -857,6 +857,10 @@ def LimasSegitiga():
     print("[3] Luas Selimut")
     print("[4] Tinggi Limas")
     pil = int(input("SILAKAN PILIH NOMOR YANG AKAN DIHITUNG = "))
+    global urutan
+    urutan += 1
+    global hitung
+    hitung += "---{}---\nKERUCUT\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             VLimasSegitiga()
@@ -872,11 +876,13 @@ def LimasSegitiga():
 def VLimasSegitiga():
     print("Masukkan nilai alas segitiga, tinggi segitiga, dan tinggi limas")
     a = float(input("alas = "))
-    t = float(input("tinggi = "))
+    t = float(input("tinggi segitiga = "))
     T = float(input("tinggi limas = "))
     if a>0 and t>0 and T>0:
         VolLimasSegitiga = (1/3)*(1/2)*a*t*T
         print("Volume Limas Segitiga = ", VolLimasSegitiga)
+        global hitung 
+        hitung = hitung + "Alas Segitiga = {}\nTinggi segitiga = {}\nTinggi Limas Segitiga = {}\nVolume Limas Segitiga = {}\n\n".format(a,t,T,VolLimasSegitiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -891,18 +897,22 @@ def LPLimasSegitiga():
     if a>0 and t>0 and luastegaksegitiga1>0 and luastegaksegitiga2>0 and luastegaksegitiga3>0:
         LP_LimasSegitiga = ((1/2)*a*t)+(luastegaksegitiga1+luastegaksegitiga2+luastegaksegitiga3)
         print("Luas Permukaan Limas Segitiga = ", LP_LimasSegitiga)
+        global hitung 
+        hitung = hitung + "Alas Segitiga = {}\nTinggi segitiga = {}\nLuas Tegak Segitiga 1 = {}\nLuas Tegak Segitiga 2 = {}\nLuas Tegak Segitiga 3 = {}\nLuas Permukaan Limas Segitiga 3 = {}\n\n".format(a,t,luastegaksegitiga1,luastegaksegitiga2,luastegaksegitiga3,LP_LimasSegitiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         LPLimasSegitiga()
 def LSLimasSegitiga():
     print("Masukkan nilai alas segitiga, Luas Permukaan, dan tinggi segitiga")
-    a = float(input("alas = "))
+    a = float(input("alas segitiga= "))
     LP = float(input("Luas Permukaan = "))
-    t = float(input("tinggi = "))
+    t = float(input("tinggi segitiga= "))
     if a>0 and LP>0 and t>0:
         LS_LimasSegitiga = LP-((1/2)*a*t)
         print("Luas Selimut Limas Segitiga = ", LS_LimasSegitiga)
+        global hitung 
+        hitung = hitung + "Alas Segitiga = {}\nLuas Permukaan segitiga = {}\nTinggi Segitiga = {}\nLuas Selimut Limas Segitiga = {}\n\n".format(a,LP_LimasSegitiga,T,LS_LimasSegitiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -915,6 +925,8 @@ def TLimasSegitiga():
     if a>0 and V>0 and t>0:
         T_LimasSegitiga = 3*V*(1/2)*a*t
         print("Tinggi Limas Segitiga = ", T_LimasSegitiga)
+        global hitung 
+        hitung = hitung + "Alas Segitiga = {}\nVolume Limas Segitiga = {}\nTinggi Segitiga = {}\nTinggi Limas Segitiga = {}\n\n".format(a,VolLimasSegitiga,t,T_LimasSegitiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
