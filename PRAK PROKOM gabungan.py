@@ -860,7 +860,7 @@ def LimasSegitiga():
     global urutan
     urutan += 1
     global hitung
-    hitung += "---{}---\nKERUCUT\n".format(urutan)
+    hitung += "---{}---\nLimas Segitiga\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             VLimasSegitiga()
@@ -875,7 +875,7 @@ def LimasSegitiga():
         LimasSegitiga()
 def VLimasSegitiga():
     print("Masukkan nilai alas segitiga, tinggi segitiga, dan tinggi limas")
-    a = float(input("alas = "))
+    a = float(input("alas segitiga = "))
     t = float(input("tinggi segitiga = "))
     T = float(input("tinggi limas = "))
     if a>0 and t>0 and T>0:
@@ -889,8 +889,8 @@ def VLimasSegitiga():
         VLimasSegitiga()
 def LPLimasSegitiga():
     print("Masukkan nilai alas segitiga, tinggi segitiga, luas tegak segitiga 1, luas tegak segitiga 2, luas tegak segitiga 3")
-    a = float(input("a = "))
-    t = float(input("t = "))
+    a = float(input("alas segitiga = "))
+    t = float(input("tinggi segitiga = "))
     luastegaksegitiga1 = float(input("luas tegak segitiga 1 = "))
     luastegaksegitiga2 = float(input("luas tegak segitiga 2 = "))
     luastegaksegitiga3 = float(input("luas tegak segitiga 3 = "))
@@ -912,7 +912,7 @@ def LSLimasSegitiga():
         LS_LimasSegitiga = LP-((1/2)*a*t)
         print("Luas Selimut Limas Segitiga = ", LS_LimasSegitiga)
         global hitung 
-        hitung = hitung + "Alas Segitiga = {}\nLuas Permukaan segitiga = {}\nTinggi Segitiga = {}\nLuas Selimut Limas Segitiga = {}\n\n".format(a,LP_LimasSegitiga,T,LS_LimasSegitiga)
+        hitung = hitung + "Alas Segitiga = {}\nLuas Permukaan = {}\nTinggi Segitiga = {}\nLuas Selimut Limas Segitiga = {}\n\n".format(a,LP,t,LS_LimasSegitiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
@@ -926,7 +926,7 @@ def TLimasSegitiga():
         T_LimasSegitiga = 3*V*(1/2)*a*t
         print("Tinggi Limas Segitiga = ", T_LimasSegitiga)
         global hitung 
-        hitung = hitung + "Alas Segitiga = {}\nVolume Limas Segitiga = {}\nTinggi Segitiga = {}\nTinggi Limas Segitiga = {}\n\n".format(a,VolLimasSegitiga,t,T_LimasSegitiga)
+        hitung = hitung + "Alas Segitiga = {}\nVolume Limas Segitiga = {}\nTinggi Segitiga = {}\nTinggi Limas Segitiga = {}\n\n".format(a,V,t,T_LimasSegitiga)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
