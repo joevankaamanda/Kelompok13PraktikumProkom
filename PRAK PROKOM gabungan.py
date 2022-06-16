@@ -860,7 +860,7 @@ def LimasSegitiga():
     global urutan
     urutan += 1
     global hitung
-    hitung += "---{}---\nLimas Segitiga\n".format(urutan)
+    hitung += "---{}---\nLIMAS SEGITIGA\n".format(urutan)
     if pil in range(1,5):
         if pil == 1:
             VLimasSegitiga()
