@@ -328,7 +328,7 @@ def LPkubus():
 def Skubus():
     print("[1] Volume")
     print("[2] Luas permukaan")
-    pil = int(input("SILAKAN PILIH NOMOR YANG DIKETAHUI = ")
+    pil = int(input("SILAKAN PILIH NOMOR YANG DIKETAHUI = "))
     if pil in range(1,3):
         if pil == 1:
             Skubus1()
