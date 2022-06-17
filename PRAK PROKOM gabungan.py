@@ -396,47 +396,47 @@ def LimasPersegi():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         LimasPersegi()
 def Vlimaspersegi():
-    print ("Masukkan nilai panjang rusuk dan tinggi")
-    s = float(input("Panjang Rusuk = "))
+    print ("Masukkan nilai panjang rusuk alas dan tinggi")
+    s = float(input("Panjang Rusuk alas = "))
     t = float(input("Tinggi = "))
     if s>0 and t>0:
         V_limaspersegi = (1/3)*(s**2)*t
         print("Volume Limas Persegi = ", V_limaspersegi)
         global hitung 
-        hitung = hitung + "Panjang rusuk = {}\nTinggi limas persegi = {}\nVolume limas persegi = {}\n\n".format(s,t,V_limaspersegi)
+        hitung = hitung + "Panjang rusuk alas = {}\nTinggi limas persegi = {}\nVolume limas persegi = {}\n\n".format(s,t,V_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         Vlimaspersegi()  
 def LPlimaspersegi() :
-    print("Masukkan nilai panjang rusuk, luas alas, dan tinggi segitiga")
-    s = float(input("Panjang Rusuk = "))
-    a = float(input("Luas Alas = "))
+    print("Masukkan nilai panjang rusuk alas, alas segitiga, dan tinggi segitiga")
+    s = float(input("Panjang Rusuk alas = "))
+    a = float(input("Alas segitiga = "))
     t = float(input("Tinggi Segitiga = "))
     if s>0 and a>0 and t>0:
         LP_limaspersegi = (s**2) + (4*(1/2)*a*t)
         print("Luas permukaan limas persegi = ", LP_limaspersegi)
         global hitung 
-        hitung = hitung + "Panjang rusuk = {}\nLuas alas = {}\nTinggi segitiga= {}\nLuas permukaan limas persegi = {}\n\n".format(s,a,t,LP_limaspersegi)
+        hitung = hitung + "Panjang rusuk alas = {}\nAlas segitiga = {}\nTinggi segitiga= {}\nLuas permukaan limas persegi = {}\n\n".format(s,a,t,LP_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         LPlimaspersegi()  
 def Slimaspersegi():
-    print ("Masukkan nilai luas permukaan dan panjang rusuk")
+    print ("Masukkan nilai luas permukaan dan panjang rusuk alas")
     LP = float(input("Luas Permukaan = "))
-    s = float(input("Panjang Rusuk = "))
+    s = float(input("Panjang Rusuk alas = "))
     if LP>0 and s>0:
         S_limaspersegi = LP - (s*s)
         print("Selimut Limas Persegi = ", S_limaspersegi)
         global hitung 
-        hitung = hitung + "Luas permukaan = {}\nPanjang rusuk = {}\nSelimut limas persegi = {}\n\n".format(LP,s,S_limaspersegi)
+        hitung = hitung + "Luas permukaan = {}\nPanjang rusuk alas = {}\nSelimut limas persegi = {}\n\n".format(LP,s,S_limaspersegi)
         ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         Slimaspersegi()  
 def Tlimaspersegi():
-    print("[1] Volume, Panjang Rusuk ")
+    print("[1] Volume, Panjang Rusuk alas")
     print("[2] Sisi Miring Segitiga, Diagonal Alas")
     pil = int(input("MASUKKAN NILAI YANG DIKETAHUI = "))
     if pil in range(1,3):
@@ -448,14 +448,15 @@ def Tlimaspersegi():
         print("Nomor yang anda masukkan salah, silakan cek dan masukkan nomor kembali")
         Tlimaspersegi()
 def Tlimaspersegi1():
-    print("Masukkan nilai volume, panjang rusuk")
+    print("Masukkan nilai volume, panjang rusuk alas")
     V = float(input("Volume = "))
-    s = float(input("Panjang Rusuk = "))
+    s = float(input("Panjang Rusuk alas = "))
     if V>0 and s>0:
         T_limaspersegi = (3*V)/(s*s)
         print("Tinggi Limas Persegi = ", T_limaspersegi)
         global hitung 
-        hitung = hitung + "Volume = {}\nPanjang rusuk =  {}\nTinggi limas persegi = {}\n\n".format(V,s,T_limaspersegi)
+        hitung = hitung + "Volume = {}\nPanjang rusuk alas =  {}\nTinggi limas persegi = {}\n\n".format(V,s,T_limaspersegi)
+        ngitunglagi()
     else:
         print("Nilai yang anda masukkan salah, silakan cek dan masukkan nilai kembali")
         Tlimaspersegi1()    
@@ -923,7 +924,7 @@ def TLimasSegitiga():
     V = float(input("Volume = "))
     t = float(input("tinggi = "))
     if a>0 and V>0 and t>0:
-        T_LimasSegitiga = 3*V*(1/2)*a*t
+        T_LimasSegitiga = 3*V/((1/2)*a*t)
         print("Tinggi Limas Segitiga = ", T_LimasSegitiga)
         global hitung 
         hitung = hitung + "Alas Segitiga = {}\nVolume Limas Segitiga = {}\nTinggi Segitiga = {}\nTinggi Limas Segitiga = {}\n\n".format(a,V,t,T_LimasSegitiga)
@@ -1009,7 +1010,7 @@ def r_sKerucut():
     s = float(input("garis pelukis = "))
     t = float(input("tinggi = "))
     if s>0 and t>0:
-        rsKerucut = ((s**2)-(t**3))**(1/2)
+        rsKerucut = ((s**2)-(t**2))**(1/2)
         print("Jari-jari Kerucut = ", rsKerucut)
         global hitung 
         hitung = hitung + "Garis pelukis kerucut = {}\nTinggi kerucut = {}\nJari-jari kerucut = {}\n\n".format(s,t,rsKerucut)
